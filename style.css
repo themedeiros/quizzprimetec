@@ -1,0 +1,105 @@
+/* Geral */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #06299b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.quiz-container {
+  background-color: #201e1e;
+  padding: 30px;
+  border-radius: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.quiz-container img {
+  width: 100%;
+  max-width: 350px; /* Limita o tamanho da logo */
+  margin-bottom: 20px;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Pergunta e opções */
+#question-container {
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 20px;
+}
+
+#answer-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Espaço entre as opções */
+}
+
+#answer-options .option {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  width: 100%; /* O botão ocupa toda a largura disponível */
+  max-width: 200px; /* Máximo de 200px para garantir que não fique largo demais em telas grandes */
+  margin: 20px auto;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .quiz-container {
+    padding: 20px;
+    width: 350px;
+    border-radius: 80px;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Reduz o tamanho do título em telas menores */
+  }
+
+  #question-container {
+    margin-left: 10px;
+  }
+
+  #answer-options {
+    margin-left: 10px;
+  }
+.quiz-container img{
+    width: 250px;
+}
+  button {
+font-size: 20px;
+    padding: 15px;
+  }
+}

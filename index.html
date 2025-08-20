@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz - Curso ChatGPT: Do Básico ao Avançado</title>
+  
+  <style>
+    /* Estilos para a página de introdução */
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      color: white;
+    }
+
+    .content {
+      background-color: #043d91;
+      padding: 30px;
+      border-radius: 100px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 600px;
+      text-align: center;
+      position: absolute;
+    }
+
+    .content img {
+      width: 330px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 18px;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+.banner {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .banner video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  width: 100%;
+}
+    button:hover {
+      background-color: #45a049;
+    }
+
+    @media (max-width: 768px) {
+     .content{
+      width: 300px;
+     }
+     .content img{
+      width: 250px;
+     }
+    }
+
+     @media (max-width:375px){
+      .content h1{
+        font-size: 20px;
+      }
+      .content p{
+        font-size: 15px;
+      }
+     }
+  </style>
+</head>
+<body>
+  <div class="banner">
+
+    <video autoplay muted loop>
+            <source src="background.mp4" type="video/mp4">
+        </video>
+
+    <div class="content">
+    <img src="logo.webp" alt="Logo da PrimeTec">
+    <h1>Bem-vindo ao Quiz: Qual o Seu Nível no ChatGPT?</h1>
+    <p>Este quiz vai ajudá-lo a descobrir qual o seu nível de conhecimento sobre o ChatGPT e como ele pode melhorar sua produtividade. Dependendo do seu perfil, vamos recomendar o curso ideal para você: básico, intermediário ou avançado!</p>
+    <p>Responda a algumas perguntas rápidas e veja como o ChatGPT pode transformar sua rotina.</p>
+    <button onclick="window.location.href='quizz.html'">Começar o Quiz</button>
+  </div>
+  </div>
+</body>
+</html>
