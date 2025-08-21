@@ -156,13 +156,13 @@ body,html{
     align-items: center;
     justify-content: center;
   }
+  .banner button{
+    margin-left: 18px;
+  }
   .banner video{
     height: 100vh;
     object-position: right;
   }
-     .banner button{
-         margin-left:18px;
-     }
   .alert img{
     margin-top: 20px;
   }
@@ -489,5 +489,4 @@ body,html{
     justify-content: center;
   }
 }
-
 
