@@ -160,6 +160,9 @@ body,html{
     height: 100vh;
     object-position: right;
   }
+     .banner button{
+         margin-left:18px;
+     }
   .alert img{
     margin-top: 20px;
   }
@@ -486,4 +489,5 @@ body,html{
     justify-content: center;
   }
 }
+
 
